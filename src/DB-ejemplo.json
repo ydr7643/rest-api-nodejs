@@ -1,0 +1,29 @@
+[
+    {
+        "nombre": "José",
+        "apellido": "Herrera",
+        "tipo_documento": "cc",
+        "numero_documento": "43754677",
+        "correo": "jherrera@ejemplo.com",
+        "celular": "3226543444",
+        "fecha_nacimiento": "12-OCT-1965"
+    },
+    {
+        "nombre": "Ana Rosa",
+        "apellido": "Calle Gaviria",
+        "tipo_documento": "cc",
+        "numero_documento": "22024624",
+        "correo": "anacalleg@ejemplo.com",
+        "celular": "3043237812",
+        "fecha_nacimiento": "22-AGO-1965"
+    },
+    {
+        "nombre": "Carlos Mario",
+        "apellido": "Tabares Molina",
+        "tipo_documento": "cc",
+        "numero_documento": "1044522134",
+        "correo": "carlos.molina@ejemplo.com",
+        "celular": "3102225612",
+        "fecha_nacimiento": "22-JUN-1998"
+    }
+]

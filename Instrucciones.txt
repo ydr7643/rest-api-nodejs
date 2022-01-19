@@ -1,0 +1,53 @@
+### REQUERIMIENTOS ###
+- express
+- morgan
+- underscore
+
+
+### IMPORTANTE ###
+
+Para simplificar la prueba y ejecutar el código sin muchas complicaciones al momento de evaluarlo, se creó un archivo JSON que simule una base de datos para poder poner a prueba los diferentes métodos de una REST API.
+
+El archivo JSON se encuentra en la ruta: ./src/DB-ejemplo.json
+
+En el código fuente se encuentra comentado para entender un poco mejor cada proceso que se realiza.
+
+
+### INSTRUCCIONES ###
+
+#Iniciar los servicios: Para iniciar los servicios, abrir una terminal en la raiz del proyecto donde se haya descomprimido, por defecto en /rest-api-nodejs/.
+#En la terminal ejecutar el comando: npm run api
+#Los servicios se comienzan a ejecutar usando el puerto 3000
+
+##Rutas para peticiones GET:
+-Ruta por defecto del inicio: http://localhost:3000/
+-Obtener todos los usuarios: http://localhost:3000/usuarios
+-Obtener un usuario: http://localhost:3000/usuarios/*numero_documento* (Ejemplo: http://localhost:3000/usuarios/22024624)
+
+##Crear usuario con POST:
+-Ruta para enviar los datos con POST: http://localhost:3000/usuarios
+-la estructura del JSON debe ser como la siguiente:
+    {
+        "nombre": "Nombre de Usuario",
+        "apellido": "Apellido de Usuario",
+        "tipo_documento": "cc",
+        "numero_documento": "numero del documento",
+        "correo": "correo del usuario",
+        "celular": "numero del usuario",
+        "fecha_nacimiento": "fecha"
+    }
+
+
+##Actualizar valores de un elemento con PUT:
+-Ruta para actualizar datos de un usuario con PUT: http://localhost:3000/usuarios/*numero_documento* (Ejemplo: http://localhost:3000/usuarios/22024624)
+-la estructura del JSON debe ser como la siguiente:
+    {
+        "nombre": "Nombre de Usuario",
+        "apellido": "Apellido de Usuario",
+        "correo": "correo del usuario",
+        "celular": "numero del usuario",
+        "fecha_nacimiento": "fecha"
+    }
+
+##Eliminar un usuario con DELETE:
+-Ruta para eliminar un usuario con DELETE: http://localhost:3000/usuarios/*numero_documento* (Ejemplo: http://localhost:3000/usuarios/22024624)
